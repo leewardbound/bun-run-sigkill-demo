@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  demo-no-alias:
+    build:
+      context: .
+    volumes: ["./:/app"]
+    command: ["next", "dev"]
+  demo-with-alias:
+    build:
+      context: .
+    volumes: ["./:/app"]
+    command: ["bun", "run", "dev"]
